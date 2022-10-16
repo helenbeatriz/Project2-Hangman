@@ -14,3 +14,9 @@ hr {
     margin: 3%;
     position: relative;
 }
+
+#image {
+    background-repeat: no-repeat;
+    height: 280px;
+    width: 240px;
+}
