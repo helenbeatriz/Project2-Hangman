@@ -1,7 +1,9 @@
-
 body {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+hr {
+    width: 500px;
 }
 #rules-icon {
     width: 20px;
