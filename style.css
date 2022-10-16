@@ -76,3 +76,62 @@ hr {
 .kletter button:hover{
     transform:scale(1.3);
 }
+
+/* section MEDIA QUERY*/
+@media (min-width: 321px){
+    .kletter button{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (min-width: 376px){
+    .kletter button{
+        width: 30px;
+        height: 30px;
+    }
+    #secretword{
+        font-size: 1.3em;
+    }
+    .sletters{
+        width: 18px;
+    }
+}
+
+@media (min-width: 426px){
+    .kletter button{
+        width: 36px;
+        height: 36px;
+    }
+    #secretword{
+        font-size: 1.5em;
+    }
+    .sletters{
+        width: 20px;
+    }
+}
+
+@media (min-width: 769px){
+    .kletter button{
+        width: 68px;
+        height: 68px;
+        font-size: 2em;
+    }
+    #secretword{
+        font-size: 2.5em;
+    }
+    .sletters{
+        width: 35px;
+    }
+
+    .modal-add-palavra{
+        width: 80%;
+    }
+}
+
+@media (min-width: 1025px){
+    .modal-add-palavra{
+        width: 50%;
+    }
+}
+/* end of media query section */
