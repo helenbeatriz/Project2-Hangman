@@ -1,7 +1,20 @@
 body {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 90vw;
+    background-color: rgb(68, 64, 64);
 }
+#title {
+    color: white;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 hr {
     width: 500px;
 }
@@ -10,12 +23,16 @@ hr {
     height: 20px;
     position: absolute;    
 }
+#rulestext{
+    color: white ;
+}
 .gfg {
     margin: 3%;
     position: relative;
 }
 
 #image {
+    background-image: url(/images/forca.png);
     background-repeat: no-repeat;
     height: 280px;
     width: 240px;
