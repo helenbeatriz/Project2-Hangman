@@ -1,0 +1,14 @@
+
+body {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#rules-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;    
+}
+.gfg {
+    margin: 3%;
+    position: relative;
+}
