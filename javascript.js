@@ -7,8 +7,10 @@ if (buttonrule.style.display === "none") {
 else {
     buttonrule.style.display = "none"
 }
+console.log(rule)
 }
 //WORDS 
+let sortedSecretWord
 const words = [
     word001 = {
         name: "IRELAND"
@@ -40,4 +42,13 @@ const words = [
     word010 = {
         name:"PSYCHOPATH"
     }
-]
+];
+
+
+createSecretWord();
+function createSecretWord(){
+    const indexWord = parseInt(Math.random() * words.length)
+    
+    sortedSecretWord =  words[indexWord].name;
+console.log(createSecretWord);
+}
