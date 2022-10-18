@@ -10,7 +10,8 @@ else {
 console.log(rule)
 }
 //WORDS 
-let sortedSecretWord
+let sortedSecretWord;
+let wordsList = [];
 const words = [
     word001 = {
         name: "IRELAND"
@@ -50,5 +51,19 @@ function createSecretWord(){
     const indexWord = parseInt(Math.random() * words.length)
     
     sortedSecretWord =  words[indexWord].name;
-console.log(createSecretWord);
+    console.log(sortedSecretWord);
+}
+wordOnScreen();
+function wordOnScreen(){
+
+    const secretWord = document.getElementById("secretword");
+    console.log(secretWord)
+    secretWord.innerHTML = "";
+
+    for(i=0; i < sortedSecretWord.length; i++) {
+    if (wordsList[i] == undefined){
+        wordsList[i] = "&nbsp;"
+          wordOnScreen.innerHTML = wordOnScreen.innerHTML + wordsList[i] 
+        }
+    }
 }

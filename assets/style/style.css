@@ -34,7 +34,7 @@ hr {
 }
 /*hangman image */ 
 #image {
-    background-image: url(/images/forca.png);
+    background-image: url(/assets/images/forca.png);
     background-repeat: no-repeat;
     height: 250px;
     width: 230px;
