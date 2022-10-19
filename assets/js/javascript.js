@@ -27,18 +27,15 @@ var words = [
 	"denonation"]
 
 let answer = '';
-let maxWrong = 6;
+let maxMistakes = 6;
 let mistakes = 0;
 let guessed = [];
-// let wordStatus = null;
-// Functions executed - > 
-randomWord();
-generateButtons();
+let wordStatus = null;
 
 function randomWord() {
     answer = words[Math.floor(Math.random() * words.length)];
   }
-  function generateButtons() {
+function generateButtons() {
     let buttonsHTML = 'abcdefghijklmnopqrstuvwxyz'.split('').map(letter =>
       `
         <button
@@ -52,3 +49,16 @@ function randomWord() {
   
     document.getElementById('keyboard').innerHTML = buttonsHTML;
   }
+
+  document.getElementById('maxMistakes').innerHTML = maxMistakes
+
+  function guessedWord() {
+    wordStatus = answer.split('').map(letter => (guessed.indexOf(letter) >= 0 ? letter : " _ ")).join('');
+  
+    document.getElementById('hiddenword').innerHTML = wordStatus;
+  }
+  
+  // Functions executed - > 
+randomWord();
+generateButtons();
+guessedWord();
