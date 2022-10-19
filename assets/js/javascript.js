@@ -71,8 +71,39 @@ function generateButtons() {
       updateHangmanPicture();
     }
   }
+  
+  function updateHangmanPicture() {
+    document.getElementById('hangmanPic').src = './assets/images/' + mistakes + '.png';
+  }
+  
   function updateMistakes() {
     document.getElementById('errors').innerHTML = mistakes;
+  }
+  function checkIfGameWon() {
+    if (wordStatus === answer) {
+      document.getElementById('keyboard').innerHTML = 'You Won!!!';
+    }
+  }
+  
+  function checkIfGameLost() {
+    if (mistakes === maxMistakes) {
+      document.getElementById('hiddenword').innerHTML = 'The answer was: ' + answer;
+      document.getElementById('keyboard').innerHTML = 'You Lost!!!';
+    }
+  }
+  function updateMistakes() {
+    document.getElementById('errors').innerHTML = mistakes;
+  }
+  
+  function reset() {
+    mistakes = 0;
+    guessed = [];
+    document.getElementById('hangmanPic').src = './assets/images/forca.png';
+  
+    randomWord();
+    guessedWord();
+    updateMistakes();
+    generateButtons();
   }
 
   // Functions executed - > 
