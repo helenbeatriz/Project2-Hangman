@@ -73,7 +73,8 @@ function generateButtons() {
   }
   
   function updateHangmanPicture() {
-    document.getElementById('hangmanPic').src = './assets/images/' + mistakes + '.png';
+    document.getElementById('hangmanPic').src = '/assets/images/forca0' + mistakes +'.png';
+    console.log(mistakes)
   }
   
   function updateMistakes() {
