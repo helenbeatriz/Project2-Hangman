@@ -2,10 +2,10 @@ body {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 90vw;
-    background-color: rgb(68, 64, 64);
+    background-color: rgb(248, 248, 248);
 }
 .title {
-    color: white;
+    color: rgb(0, 0, 0);
     justify-content: center;
 }
 .box {
@@ -20,20 +20,77 @@ hr {
     width: 500px;
 }
 /*rules section */
-#rules-icon {
-    width: 20px
-    ;
-    height: 20px;
-    position: absolute;    
-}
-#rulestext{
-    color: white ;
-    justify-content: center;
-}
-.gfg {
-    margin: 3%;
-    position: relative;
-}
+/* Rules pop up button*/
+.info {
+    background: transparent;
+    border: 1px solid;
+    font-size: small;
+  }
+  /* Style for rules pop up message */
+  .rules {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid #3a3330;
+    border-radius: 5px;
+    z-index: 10;
+    background-color: #f4ead8;
+    width: 500px;
+    max-width: 80%;
+  }
+  
+  .rules.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  /* Styling for rules header */
+  .rules-header {
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f7f2f0;
+  }
+  /* Styling for rules title */
+  .rules-header .title {
+    color: #070200;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  /* Style for rules close button */
+  .rules-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: bold;
+    font-size: x-large;
+    color: #3a3330;
+  }
+  /* Style for rules main body */
+  .rules-body {
+    color: #3a3330;
+    padding: 10px 10px;
+  }
+  
+  /* overlay that shows while rules pop up is being viewed */
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 24, 0, 0.2);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
 /*hangman image */ 
 #image {
     height: 250px;

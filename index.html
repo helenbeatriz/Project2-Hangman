@@ -10,12 +10,37 @@
 </head>
 <body>
         <!--- Rules of the game section -->
-<div id="rules-icon" onclick="rule()">📜</div> 
-<div id="rulestext">   </div> <div class="container"></div>
+        <h1 class="title">Hangman</h1> <button data-rules-target="#rules" class="info">Rules</button>
+        <label class="switch">
+            <div class="message-container"></div>
+      <!-- Hidden div that shows when rules button is clicked -->
+      <div class="rules" id="rules">
+        <div class="rules-header">
+          <div class="title">How to Play</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="rules-body">
+          You have got 6 tries to guess the word! 
+          <ul>
+           As letters in the word are guessed, they will be written above the cooresponding underline
+          </ul>
+            <ul> If a letter not in the word is guessed a draw of a man on the gallow–one part for each incorrect letter guess</li>
+            </ul>
+          If you want to try a new word, simply click on the button restart the page and start
+          again!
+        </div>
+      </div>
+      <!-- Overlay that activates when the rules pop up is opened, prevents clicking on anything in the background -->
+      <div id="overlay"></div>
+      <!-- Container for the tiles -->
+      <div class="tile-container"></div>
+      <!-- Container for the keyboard -->
+      <div class="key-container"></div>
+    </div>
 
 
         <!-- Main content of the game  -->
-            <h1 class="title">Hangman</h1>
+
             <div class="wrongguesses">Wrong Guesses: <span id='errors'>0</span> of <span id='maxMistakes'></span></div>
             <div class="text-center">
               <img id='hangmanPic' src="assets/images/forca.png" alt="">

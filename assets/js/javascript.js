@@ -1,14 +1,35 @@
-function rule() {
-    var buttonrule = document.getElementById('rulestext');
-buttonrule.innerHTML = "Rules are going to be here I still need to type them"
-// if (buttonrule.style.display === "block") {
-//     buttonrule.style.display= "none";
-// }
-// else {
-//     buttonrule.style.display = "none"
-// }
 
+//rules pop up functions
+const openRulesButton = document.querySelectorAll("[data-rules-target]");
+const closeRulesButton = document.querySelectorAll("[data-close-button]");
+const overlay = document.getElementById("overlay");
+
+openRulesButton.forEach((button) => {
+  button.addEventListener("click", () => {
+    const rules = document.querySelector(button.dataset.rulesTarget);
+    openRules(rules);
+  });
+});
+
+closeRulesButton.forEach((button) => {
+  button.addEventListener("click", () => {
+    const rules = button.closest(".rules");
+    closeRules(rules);
+  });
+});
+
+function openRules(rules) {
+  if (rules == null) return;
+  rules.classList.add("active");
+  overlay.classList.add("active");
 }
+
+function closeRules(rules) {
+  if (rules == null) return;
+  rules.classList.remove("active");
+  overlay.classList.remove("active");
+}
+
 // Array with the words for the game 
 var words = [
 	"destruction",
@@ -95,7 +116,7 @@ function generateButtons() {
       document.getElementById('keyboard').innerHTML = 'You Lost!!!';
     }
   }
-  
+  // Reseting the game function 
   function reset() {
     mistakes = 0;
     guessed = [];
@@ -106,8 +127,7 @@ function generateButtons() {
     updateMistakes();
     generateButtons();
   }
-
-  // Functions executed - > 
+  // Functions being executed 
 randomWord();
 generateButtons();
 guessedWord();
