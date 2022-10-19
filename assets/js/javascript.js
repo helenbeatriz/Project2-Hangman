@@ -57,8 +57,27 @@ function generateButtons() {
   
     document.getElementById('hiddenword').innerHTML = wordStatus;
   }
+  function handleGuess(chosenLetter) {
+    guessed.indexOf(chosenLetter) === -1 ? guessed.push(chosenLetter) : null;
+    document.getElementById(chosenLetter).setAttribute('disabled', true);
   
+    if (answer.indexOf(chosenLetter) >= 0) {
+      guessedWord();
+      checkIfGameWon();
+    } else if (answer.indexOf(chosenLetter) === -1) {
+      mistakes++;
+      updateMistakes();
+      checkIfGameLost();
+      updateHangmanPicture();
+    }
+  }
+  function updateMistakes() {
+    document.getElementById('errors').innerHTML = mistakes;
+  }
+
   // Functions executed - > 
 randomWord();
 generateButtons();
 guessedWord();
+handleGuess();
+reset();
