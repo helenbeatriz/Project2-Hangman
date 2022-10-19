@@ -9,7 +9,7 @@ buttonrule.innerHTML = "Rules are going to be here I still need to type them"
 // }
 
 }
-// Game starts here 
+// Array with the words for the game 
 var words = [
 	"destruction",
 	"javascript",
@@ -25,16 +25,18 @@ var words = [
 	"stress",
 	"hypochondria",
 	"denonation"]
-
+// variables 
 let answer = '';
 let maxMistakes = 6;
 let mistakes = 0;
 let guessed = [];
 let wordStatus = null;
 
+//generating words function
 function randomWord() {
     answer = words[Math.floor(Math.random() * words.length)];
   }
+//generating buttons function
 function generateButtons() {
     let buttonsHTML = 'abcdefghijklmnopqrstuvwxyz'.split('').map(letter =>
       `
@@ -51,7 +53,7 @@ function generateButtons() {
   }
 
   document.getElementById('maxMistakes').innerHTML = maxMistakes
-
+//printing guessed word on screen 
   function guessedWord() {
     wordStatus = answer.split('').map(letter => (guessed.indexOf(letter) >= 0 ? letter : " _ ")).join('');
   
@@ -71,29 +73,27 @@ function generateButtons() {
       updateHangmanPicture();
     }
   }
-  
+  //updating hangman images on the game based on mistakes
   function updateHangmanPicture() {
     document.getElementById('hangmanPic').src = '/assets/images/forca0' + mistakes +'.png';
     console.log(mistakes)
   }
-  
+  // updating number of mistakes written on screen 
   function updateMistakes() {
     document.getElementById('errors').innerHTML = mistakes;
   }
+  //function if the player wins the game
   function checkIfGameWon() {
     if (wordStatus === answer) {
       document.getElementById('keyboard').innerHTML = 'You Won!!!';
     }
   }
-  
+    //function if the player loses the game
   function checkIfGameLost() {
     if (mistakes === maxMistakes) {
       document.getElementById('hiddenword').innerHTML = 'The answer was: ' + answer;
       document.getElementById('keyboard').innerHTML = 'You Lost!!!';
     }
-  }
-  function updateMistakes() {
-    document.getElementById('errors').innerHTML = mistakes;
   }
   
   function reset() {
