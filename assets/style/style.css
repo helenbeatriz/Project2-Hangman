@@ -1,12 +1,21 @@
 body {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 90vw;
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(0, 0, 0);
 }
+.game-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 .title {
     color: rgb(0, 0, 0);
     justify-content: center;
+    font-size: 40px;
+    border-bottom: 1px solid #070200;
+    width: 45%;
 }
 .box {
     display: flex;
@@ -22,7 +31,7 @@ hr {
 /*rules section */
 /* Rules pop up button*/
 .info {
-    background: transparent;
+   
     border: 1px solid;
     font-size: small;
   }
@@ -104,7 +113,7 @@ hr {
     justify-content: center;
     flex-wrap: wrap;
     display: flexbox;
-    width: 70%;
+    width: 50%;
     margin: auto;
 }
 #keyboard button {
@@ -121,6 +130,7 @@ hr {
     font-weight: 900;
     text-transform: uppercase;
     font-size: 25px;
+    
 
 }
 #keyboard button:hover{
@@ -132,6 +142,11 @@ hr {
         width: 25px;
         height: 25px;
     }
+    .game-container {
+        background-color:rgb(131 212 254);
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 @media (min-width: 376px){
@@ -181,6 +196,20 @@ hr {
 @media (min-width: 1025px){
     .modal-add-palavra{
         width: 50%;
+    }
+    #keyboard {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .game-container {
+        background-color:rgb(131 212 254);
+        width: 39%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
     }
 }
 /* end of media query section */
