@@ -1,4 +1,18 @@
+const homeContainer = document.querySelector('.game-container');
+const mainContainer = document.querySelector('.main-container');
+const startButton = document.getElementById('btn');
 
+function onLoad() {
+  /* event listener for start button */
+  startButton.addEventListener('click', e => {
+      homeContainer.classList.add('hidden');
+      mainContainer.classList.remove('hidden');
+      randomWord();
+      generateButtons();
+      guessedWord();
+      reset();
+  });
+}
 //rules pop up functions
 const openRulesButton = document.querySelectorAll("[data-rules-target]");
 const closeRulesButton = document.querySelectorAll("[data-close-button]");
@@ -83,7 +97,7 @@ function generateButtons() {
   function handleGuess(chosenLetter) {
     guessed.indexOf(chosenLetter) === -1 ? guessed.push(chosenLetter) : null;
     document.getElementById(chosenLetter).setAttribute('disabled', true);
-  
+
     if (answer.indexOf(chosenLetter) >= 0) {
       guessedWord();
       checkIfGameWon();
@@ -126,10 +140,4 @@ function generateButtons() {
     guessedWord();
     updateMistakes();
     generateButtons();
-  }
-  // Functions being executed 
-randomWord();
-generateButtons();
-guessedWord();
-handleGuess();
-reset();
+  } 

@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
     <title>Hangman</title>
     
 </head>
 <body>
   <section class="game-container">
         <!--- Rules of the game section -->
-        <h1 class="title">Hangman</h1> <button data-rules-target="#rules" class="info">Rules</button>
+        <div class="header"></div>
+        <h1 class="title">Hangman</h1> <button data-rules-target="#rules" class="info">Rules</button></div>
         <label class="switch">
             <div class="message-container"></div>
       <!-- Hidden div that shows when rules button is clicked -->
@@ -31,7 +33,7 @@
           again!
         </div>
       </div>
-      <!-- Overlay that activates when the rules pop up is opened, prevents clicking on anything in the background -->
+      <!-- Activates when the rules pop up is opened -->
       <div id="overlay"></div>
       <!-- Container for the tiles -->
       <div class="tile-container"></div>
@@ -39,23 +41,41 @@
       <div class="key-container"></div>
     </div>
 
-
+    <div class="main-container hidden">
         <!-- Main content of the game  -->
-
             <div class="wrongguesses">Wrong Guesses: <span id='errors'>0</span> of <span id='maxMistakes'></span></div>
             <div class="text-center">
               <img id='hangmanPic' src="assets/images/forca.png" alt="">
               <p>Guess the word:</p>
-              <p id="hiddenword">The word to be guessed goes here</p>
+              <p id="hiddenword"></p>
+    <button class="btn btn-info" onClick="reset()">Play</button>
     <button class="btn btn-info" onClick="reset()">Reset</button>
+
             </div> 
           </div>
+      
         
 <!-- keyboard -->
 <div id="keyboard"> 
 </div>
-</section>
+</div>
+</section> fab fa-github-square fab fa-linkedin
     </div>
+    <footer>
+      <ul class="social-networks">
+        <li>
+            <a href="https://www.facebook.com/helen.beatriz.10/" target="_blank" rel="noopener"
+                aria-label="Visit my Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/helenbeatriz/" target="_blank" rel="noopener"
+              aria-label="Visit my Github page (opens in a new tab)"><i class="fab fa-github-square"></i></a>
+      </li>
+      <li>
+          <a href="https://www.linkedin.com/in/helen-cantu-1a0097166/" target="_blank" rel="noopener"
+              aria-label="Visit my Linkedin page (opens in a new tab)"><i class="fab fa-linkedin"></i></a>
+      </li>
+  </ul>
     <script src="assets/js/javascript.js" ></script> 
 </body>
 </html>
