@@ -42,6 +42,24 @@ footer {
 hr {
     width: 500px;
 }
+/* Error page */ 
+
+.errorfour
+{
+    font-size: 60px;
+    text-align: center;
+    clear: both;
+    padding-top: 10%;
+}
+.homereturn {
+    font-size: large;
+    color: #fff;
+    text-decoration: none; 
+}
+.homereturn:hover {
+    color: #e27100;
+    text-decoration: underline;
+}
 /*rules section */
 .info {
    
