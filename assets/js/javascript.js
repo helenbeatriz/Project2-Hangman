@@ -110,7 +110,7 @@ function generateButtons() {
   }
   //updating hangman images on the game based on mistakes
   function updateHangmanPicture() {
-    document.getElementById('hangmanPic').src = '/assets/images/forca0' + mistakes +'.png';
+    document.getElementById('hangmanPic').src = 'assets/images/forca0' + mistakes +'.png';
     console.log(mistakes)
   }
   // updating number of mistakes written on screen 
