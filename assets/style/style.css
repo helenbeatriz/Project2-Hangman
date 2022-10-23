@@ -1,6 +1,5 @@
 body {
     text-align: center;
-    font-family: cursive;
     background-color: rgb(0, 0, 0);
 }
 
@@ -187,7 +186,6 @@ hr {
         height: 25px;
     }
     .game-container {
-        background-color:rgb(131 212 254);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -246,7 +244,7 @@ hr {
         margin-right: auto;
     }
     .game-container {
-        background-color:rgb(131 212 254);
+        background-color:rgb(50 255 131);
         width: 50%;
         display: flex;
         justify-content: center;
