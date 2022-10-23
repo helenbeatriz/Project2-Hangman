@@ -1,10 +1,10 @@
 const homeContainer = document.querySelector('.game-container');
 const mainContainer = document.querySelector('.main-container');
-const startButton = document.getElementById('btn');
+const playButton = document.getElementById('btn');
 
 function onLoad() {
   /* event listener for start button */
-  startButton.addEventListener('click', e => {
+  playButton.addEventListener('click', e => {
       homeContainer.classList.add('hidden');
       mainContainer.classList.remove('hidden');
       randomWord();
