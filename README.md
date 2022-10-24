@@ -100,14 +100,10 @@ The live link can be found here - https://helenbeatriz.github.io/Cookingacademy-
 
 ## Credits 
 
-The Love Running Project was used as a reference through the project. 
-All the pictures/media are owned by Pexels.
-I did the whole website based on the things I learnt through the course, watching videos on Youtube and mixing then and creating my own. 
+- Pop up section was found [here] https://www.youtube.com/watch?v=MBaw_6cPmAw
+- Hangman pictures  that were used are from [here] https://www.cursoemvideo.com/
+- Game logic was created based on [this] tutorial. https://www.youtube.com/watch?v=dgvyE1sJS3Y
 
 ### Content 
 
-- Footer icons were taken from FontAwsome. https://fontawesome.com/
-
-### Media
-
-- All the pictures/media are owned by Pexels. https://www.pexels.com/
+- Footer icons were taken from [FontAwsome]. https://fontawesome.com/
