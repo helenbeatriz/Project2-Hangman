@@ -130,7 +130,7 @@ hr {
   }
   
   button {
-    border-radius:1px solid dimgrey;
+    border-radius:1px;
   }
   #overlay.active {
     opacity: 1;
@@ -154,7 +154,7 @@ hr {
     margin-top: 30px;
     justify-content: center;
     flex-wrap: wrap;
-    display: flexbox;
+    display: flex;
     width: 50%;
     margin: auto;
     margin-bottom: 50px;
