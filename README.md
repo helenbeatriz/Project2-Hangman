@@ -1,5 +1,5 @@
-# Project2-Hangman
-# Cooking Academy 
+# Hangman
+
 ![Mockup](/assets/images/mockup.png)
 Hangman is a guessing word game. Designed to give the user experience fun and at the same time its a very good game to keep the mind focus on teaching learning process.
 How you play : 
@@ -15,17 +15,20 @@ How you play :
           again!
 View the live site [here](https://helenbeatriz.github.io/Project2-Hangman/index.html)
 
-## Design
+## UX Design
+### User stories 
+features that are add in my project saying that the user expects to see when open my website. 
+As a user, I want instructions so that I learn how to play the game.
+As a user, I want a play button so when I click on "Play" I can see it and start playing. 
+As a user, I want a Keyboard so I can see the letters I inserted when guessing the word.
+As a user, I want reset button so that I restart the game when I finish playing it. 
+As a user, I want a visual representation of a Hangman that parts of his body is added for each incorrect letter guess.
+-When the user opens the application 
 
 ### Wireframes
-
+![Game](/assets/images/hangamanwire.png)
 This is how I was planning my website to look like. 
 <br>
-Home page
-<br><br>
-
-![Game](/assets/images/bigscreen.png)
-<br><br>
 
 ### Existing Features
 
@@ -39,7 +42,7 @@ Home page
 - Hangman game 
 
   - The website contains one full responsive bar that includes links  to play, restart the game and also rules to guide the user through the game
-    <li>CHangman title </li>
+    <li>Hangman title </li>
     <li>Hangman that is a man that starts to  get  body parts added to the hanging part./li>
 <ul>
         <li>Play  - to start playiing the game</li>
@@ -51,8 +54,8 @@ Home page
 
 - __The Footer__ 
 
-  - The footer contains social feature that link the page to Instagram, Facebook, Twitter.
-  - This will allow the users to follow Cooking Classes on social media to keep up to date with things that might not be on our website. 
+  - The footer contains social feature that link the page to my Linkedin, Github and Facebook.
+  - This will allow the users to get in touch with me in case they are interested on my projects.
 
 ![Footer](assets/images/footer.png)
 
@@ -68,7 +71,7 @@ Home page
 I tested the website on different sreen sizes and devices to ensure responsiveness. I tested on Large screen, laptop, iPad Mini, iPhone X, iPhone8, Xiaomi 9, and iPhone SE.
 
 - I had some issues while trying to generate words via another wbsite so I ended up using my own words.
-- Had issues running the codes because I wasnt calling the functions.
+- Had issues running the codes because I wasn't calling the functions.
 - I had to resize all the images in order to achieve better responsiveness.
 - To achieve the required colour contrast, I used the tool Colour Contrast Checker.
 
@@ -83,7 +86,10 @@ I tested the website on different sreen sizes and devices to ensure responsivene
   - Also got good scores on lightroom. 
   ![CSS-validator](assets/images/cssvalidator.png)
 
-
+  - JSHint
+  - Reset() function error is shown as a non called function although it's being called on html.index file.
+  - Function handleGuess() is being called on te function generateButtons (keyboard).
+  
 ## Deployment
 
 This website was created using Gitpod.
@@ -95,7 +101,7 @@ This website was created using Gitpod.
   - Click 'Save'
   - A live link appears on a green tag when published successfully. 
 
-The live link can be found here - https://helenbeatriz.github.io/Cookingacademy-P1/
+The live link can be found [here] - (https://helenbeatriz.github.io/Project2-Hangman/index.html)
 
 
 ## Credits 
@@ -107,3 +113,4 @@ The live link can be found here - https://helenbeatriz.github.io/Cookingacademy-
 ### Content 
 
 - Footer icons were taken from [FontAwsome]. https://fontawesome.com/
+- Website icon was taken from [Flaticon]. https://www.flaticon.com/
