@@ -1,18 +1,4 @@
-const homeContainer = document.querySelector('.game-container');
-const mainContainer = document.querySelector('.main-container');
-const playButton = document.getElementById('btn');
 
-function onLoad() {
-  /* event listener for start button */
-  playButton.addEventListener('click', e => {
-      homeContainer.classList.add('hidden');
-      mainContainer.classList.remove('hidden');
-      randomWord();
-      generateButtons();
-      guessedWord();
-      reset();
-  });
-}
 //rules pop up functions
 const openRulesButton = document.querySelectorAll("[data-rules-target]");
 const closeRulesButton = document.querySelectorAll("[data-close-button]");
@@ -59,7 +45,7 @@ var words = [
 	"happy",
 	"stress",
 	"hypochondria",
-	"denonation"]
+	"denonation"];
 // variables 
 let answer = '';
 let maxMistakes = 6;
@@ -87,7 +73,7 @@ function generateButtons() {
     document.getElementById('keyboard').innerHTML = buttonsHTML;
   }
 
-  document.getElementById('maxMistakes').innerHTML = maxMistakes
+  document.getElementById('maxMistakes').innerHTML = maxMistakes;
 //printing guessed word on screen 
   function guessedWord() {
     wordStatus = answer.split('').map(letter => (guessed.indexOf(letter) >= 0 ? letter : " _ ")).join('');
@@ -111,7 +97,7 @@ function generateButtons() {
   //updating hangman images on the game based on mistakes
   function updateHangmanPicture() {
     document.getElementById('hangmanPic').src = './assets/images/forca0' + mistakes +'.png';
-    console.log(mistakes)
+    console.log(mistakes);
   }
   // updating number of mistakes written on screen 
   function updateMistakes() {
