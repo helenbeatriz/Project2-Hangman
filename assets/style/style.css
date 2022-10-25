@@ -256,4 +256,11 @@ hr {
     }
 }
 }
+@media (min-height:766px) {
+    body {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+} 
 /* end of media query section */
