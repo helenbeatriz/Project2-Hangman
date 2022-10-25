@@ -1,6 +1,16 @@
+html, body {
+    height: 100%;
+  }
+main {
+    flex: 1 0 auto;
+  }
 body {
     text-align: center;
     background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    font-family: fantasy;
+    letter-spacing: 4px;
 }
 
 .game-container {
@@ -8,13 +18,13 @@ body {
     justify-content: center;
     align-items: center;
     background-color:rgb(50 255 131);
-
+    border-radius: 20px;
   }
 .title {
-    color: rgb(0, 0, 0);
+    color: rgb(248, 248, 248);
     justify-content: center;
+    align-items: center;
     font-size: 40px;
-    width: 45%;
 }
 .box {
     display: flex;
@@ -27,12 +37,18 @@ body {
 /*footer */
 footer {
     text-align: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
+
 .social-networks {
     text-align: center;
 }
 .social-networks>li {
-    display: inline;
+    display: flex;
 }
 .social-networks i {
     font-size: 160%;
@@ -132,7 +148,7 @@ hr {
   }
   
   button {
-    border-radius:1px;
+    border-radius:10px;
   }
   #overlay.active {
     opacity: 1;
@@ -252,7 +268,6 @@ hr {
         align-items: center;
         margin-left: auto;
         margin-right: auto;
-        border-radius: 20px;
     }
 }
 }

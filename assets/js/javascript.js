@@ -81,7 +81,10 @@ function generateButtons() {
     document.getElementById('hiddenword').innerHTML = wordStatus;
   }
   function handleGuess(chosenLetter) {
-    guessed.indexOf(chosenLetter) === -1 ? guessed.push(chosenLetter) : null;
+   if (guessed.indexOf(chosenLetter) === -1 ) {
+     guessed.push(chosenLetter);
+   }
+   
     document.getElementById(chosenLetter).setAttribute('disabled', true);
 
     if (answer.indexOf(chosenLetter) >= 0) {

@@ -1,18 +1,13 @@
 # Hangman
 
 ![Mockup](/assets/images/mockup.png)
-Hangman is a guessing word game. Designed to give the user experience fun and at the same time its a very good game to keep the mind focus on teaching learning process.
+Hangman is a guessing word game. Designed to give the user  fun and at the same time it is a very good game to keep the mind focus on teaching learning process.
 How you play : 
-         <ul> 
-         You have got 6 tries to guess the word! 
-         </ul>
-          <ul>
-           As letters in the word are guessed, they will be written above the cooresponding underline
-          </ul>
-            <ul> If a letter not in the word is guessed a draw of a man on the gallow–one part for each incorrect letter guess</li>
-            </ul>
-          If you want to try a new word, simply click on the button restart the page and start
-          again!
+ You have got 6 tries to guess the word! 
+As letters in the word are guessed, they will be written above the corresponding underline.
+ If a letter not in the word is guessed a draw of a man on the gallow–one part for each incorrect letter guess
+If you want to try a new word, simply click on the button restart the page and start
+again!
 View the live site [here](https://helenbeatriz.github.io/Project2-Hangman/index.html)
 
 ## UX Design
@@ -23,10 +18,11 @@ As a user, I want a play button so when I click on "Play" I can see it and start
 As a user, I want a Keyboard so I can see the letters I inserted when guessing the word.
 As a user, I want reset button so that I restart the game when I finish playing it. 
 As a user, I want a visual representation of a Hangman that parts of his body is added for each incorrect letter guess.
--When the user opens the application 
+-When the user opens the application its expected that he/she opens the rules section and then play the game click ok 'play', the keyboard is going to show up once that is done.
 
 ### Wireframes
 ![Game](/assets/images/hangamanwire.png)
+
 This is how I was planning my website to look like. 
 <br>
 
@@ -34,30 +30,29 @@ This is how I was planning my website to look like.
 
 * Responsive game.  
 * Rules section.
-* CPlay and reset button.
+* Play and reset button.
 * 404 Error page.
 
 ## Features 
 
 - Hangman game 
-
-  - The website contains one full responsive bar that includes links  to play, restart the game and also rules to guide the user through the game
-    <li>Hangman title </li>
-    <li>Hangman that is a man that starts to  get  body parts added to the hanging part./li>
+- The website contains one full responsive bar that includes links  to play, restart the game and also rules to guide the user through the game
+<li>Hangman title </li>
+<li>Hangman that is a man that starts to  get  body parts added to the hanging part./li>
 <ul>
-        <li>Play  - to start playiing the game</li>
-        <li>Reset - to reset the game and start a new one </li>
-        <li>Rules - to guide th user on how to play the game</li>
+<li>Play  - to start playing the game</li>
+<li>Reset - to reset the game and start a new one </li>
+<li>Rules - to guide the user on how to play the game</li>
 </ul>
  
-![Nav Bar](/assets/images/navbar.png)  Need to be added
+
 
 - __The Footer__ 
 
   - The footer contains social feature that link the page to my Linkedin, Github and Facebook.
   - This will allow the users to get in touch with me in case they are interested on my projects.
 
-![Footer](assets/images/footer.png)
+![Footer](assets/images/footer.png) - > need to be added
 
 
 ### Features Left to Implement
@@ -70,15 +65,15 @@ This is how I was planning my website to look like.
 
 I tested the website on different sreen sizes and devices to ensure responsiveness. I tested on Large screen, laptop, iPad Mini, iPhone X, iPhone8, Xiaomi 9, and iPhone SE.
 
-- I had some issues while trying to generate words via another wbsite so I ended up using my own words.
+- I had some issues while trying to generate words via another website so I ended up using my own words.
 - Had issues running the codes because I wasn't calling the functions.
 - I had to resize all the images in order to achieve better responsiveness.
-- To achieve the required colour contrast, I used the tool Colour Contrast Checker.
+- To achieve the required colour contrast I used the tool Colour Contrast Checker.
 
-### Validator Testing 
+### Validator Testing the whole section need to be added but it was already checked -  
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhelenbeatriz.github.io%2FCookingacademy-P1%2F) 
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhelenbeatriz.github.io%2FCookingacademy-P1%2F) - need to be added 
   ![HTML-Validator](assets/images/htmlvalidator.png)
   
 - CSS
@@ -87,8 +82,8 @@ I tested the website on different sreen sizes and devices to ensure responsivene
   ![CSS-validator](assets/images/cssvalidator.png)
 
   - JSHint
-  - Reset() function error is shown as a non called function although it's being called on html.index file.
-  - Function handleGuess() is being called on te function generateButtons (keyboard).
+  - "Reset()" function error is shown as a non called function although it's being called on html.index file.
+  - Function "handleGuess()" is being called on te function generateButtons (keyboard).
   
 ## Deployment
 
