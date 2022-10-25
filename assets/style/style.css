@@ -256,7 +256,7 @@ hr {
     }
 }
 }
-@media (min-height:766px) {
+@media(min-height:768px) {
     body {
 display: flex;
 justify-content: center;
