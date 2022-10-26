@@ -234,6 +234,15 @@ footer {
 }
 
 @media (min-width: 769px){
+    .game-container {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: flow-root;
+    }
     .kletter button{
         width: 68px;
         height: 68px;

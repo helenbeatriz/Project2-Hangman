@@ -1,6 +1,6 @@
 # Hangman
 
-![Mockup](/assets/images/mockup.png)
+![Mockup](assets/images/mockup.png)
 Hangman is a guessing word game. Designed to give the user  fun and at the same time it is a very good game to keep the mind focus on teaching learning process.
 How you play : 
  You have got 6 tries to guess the word! 
@@ -18,7 +18,12 @@ As a user, I want a play button so when I click on "Play" I can see it and start
 As a user, I want a Keyboard so I can see the letters I inserted when guessing the word.
 As a user, I want reset button so that I restart the game when I finish playing it. 
 As a user, I want a visual representation of a Hangman that parts of his body is added for each incorrect letter guess.
--When the user opens the application its expected that he/she opens the rules section and then play the game click ok 'play', the keyboard is going to show up once that is done.
+-When the user opens the application its expected that he/she opens the instructions section and then play the game click ok 'play', the keyboard is going to show up once that is done.
+Once keyboard is shown user will try to guess the word that is hidden on the game and when the letter does not exists in the word the man's body is going to start showing up on the hanging rope.
+User has 6 chances to make mistakes and then he loses. 
+Once user loses the hangman is going to appear on the screen with a message saying he/she lost.
+If user wins. a message that we won is going to show up.
+User can reset the game for a new word at any time.
 
 ### Wireframes
 ![Game](/assets/images/hangamanwire.png)
