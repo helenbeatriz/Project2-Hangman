@@ -57,7 +57,7 @@ This is how I was planning my website to look like.
   - The footer contains social feature that link the page to my Linkedin, Github and Facebook.
   - This will allow the users to get in touch with me in case they are interested on my projects.
 
-![Footer](assets/images/footer.png) - > need to be added
+![Footer](assets/images/footer.png) 
 
 
 ### Features Left to Implement
