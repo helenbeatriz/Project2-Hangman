@@ -78,7 +78,7 @@ I tested the website on different sreen sizes and devices to ensure responsivene
 ### Validator Testing the whole section need to be added but it was already checked -  
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhelenbeatriz.github.io%2FCookingacademy-P1%2F) - need to be added 
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhelenbeatriz.github.io%2FCookingacademy-P1%2F) 
   ![HTML-Validator](assets/images/htmlvalidator.png)
   
 - CSS
@@ -86,7 +86,7 @@ I tested the website on different sreen sizes and devices to ensure responsivene
   - Also got good scores on lightroom. 
   ![CSS-validator](assets/images/cssvalidator.png)
 
-  - JSHint
+  -  No potention errors were found on JSHint. ![JSHint](assets/images/jshint.png)
   - "Reset()" function error is shown as a non called function although it's being called on html.index file.
   - Function "handleGuess()" is being called on te function generateButtons (keyboard).
   
