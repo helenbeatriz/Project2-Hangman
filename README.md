@@ -37,7 +37,7 @@ This is how I was planning my website to look like.
 - Hangman game 
 - The website contains one full responsive bar that includes links  to play, restart the game and also rules to guide the user through the game
 <li>Hangman title </li>
-<li>Hangman that is a man that starts to  get  body parts added to the hanging part./li>
+<li>Hangman that is a man that starts to  get  body parts added to the hanging part.< /li>
 <ul>
 <li>Play  - to start playing the game</li>
 <li>Reset - to reset the game and start a new one </li>
@@ -60,6 +60,9 @@ The 404 page will allow the user to easily go back to the main page cliking on "
 * Once keyboard is shown user will try to guess the word that is hidden on the game and when the letter does not exists in the word the man's body is going to start showing up on the hanging rope.
 * User has 6 chances to make mistakes and then he loses. 
 * Once user loses the hangman is going to appear on the screen with a message saying he/she lost.
+
+![WrongAttempt](/assets/images/wrongattempt.png)
+
 * If user wins. a message that we won is going to show up.
 * User can reset the game for a new word at any time.
 
