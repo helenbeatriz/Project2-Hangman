@@ -13,17 +13,11 @@ View the live site [here](https://helenbeatriz.github.io/Project2-Hangman/index.
 ## UX Design
 ### User stories 
 features that are add in my project saying that the user expects to see when open my website. 
-As a user, I want instructions so that I learn how to play the game.
-As a user, I want a play button so when I click on "Play" I can see it and start playing. 
-As a user, I want a Keyboard so I can see the letters I inserted when guessing the word.
-As a user, I want reset button so that I restart the game when I finish playing it. 
-As a user, I want a visual representation of a Hangman that parts of his body is added for each incorrect letter guess.
--When the user opens the application its expected that he/she opens the instructions section and then play the game click ok 'play', the keyboard is going to show up once that is done.
-Once keyboard is shown user will try to guess the word that is hidden on the game and when the letter does not exists in the word the man's body is going to start showing up on the hanging rope.
-User has 6 chances to make mistakes and then he loses. 
-Once user loses the hangman is going to appear on the screen with a message saying he/she lost.
-If user wins. a message that we won is going to show up.
-User can reset the game for a new word at any time.
+* As a user, I want instructions so that I learn how to play the game.
+* As a user, I want a play button so when I click on "Play" I can see it and start playing. 
+* As a user, I want a Keyboard so I can see the letters I inserted when guessing the word.
+* As a user, I want reset button so that I restart the game when I finish playing it. 
+* As a user, I want a visual representation of a Hangman that parts of his body is added for each incorrect letter guess.
 
 ### Wireframes
 ![Game](/assets/images/hangamanwire.png)
@@ -50,7 +44,14 @@ This is how I was planning my website to look like.
 <li>Rules - to guide the user on how to play the game</li>
 </ul>
  
+# How to Play 
 
+* When the user opens the application its expected that he/she opens the instructions section and then play the game click ok 'play', the keyboard is going to show up once that is done.
+* Once keyboard is shown user will try to guess the word that is hidden on the game and when the letter does not exists in the word the man's body is going to start showing up on the hanging rope.
+* User has 6 chances to make mistakes and then he loses. 
+* Once user loses the hangman is going to appear on the screen with a message saying he/she lost.
+* If user wins. a message that we won is going to show up.
+* User can reset the game for a new word at any time.
 
 - __The Footer__ 
 

@@ -1,85 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-    <link rel="icon" href="assets/images/icon.png" type="image/x-icon"> 
-    <title>Hangman</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <link rel="icon" href="assets/images/icon.png" type="image/x-icon">
+  <title>Hangman</title>
 
 </head>
+
 <body>
   <header>
-    <h1 class="title">Hangman</h1> 
+    <h1 class="title">Hangman</h1>
   </header>
   <main class="game-container">
-        <div class="header"></div>
-                <!--- Rules of the game section -->
-      <button data-rules-target="#rules" class="info">Instructions</button> 
-        <label class="switch"> </label>
-            <div class="message-container"></div>
-      <!-- Hidden div that shows when rules button is clicked -->
-      <div class="rules" id="rules">
-        <div class="rules-header">
-          <div class="title">How to Play</div>
-          <button data-close-button class="close-button">&times;</button>
-        </div>
-        <div class="rules-body">
-          You have got 6 tries to guess the word! 
-          <ul>
-            <li>
-           As letters in the word are guessed, they will be written above the corresponding underline
-            </li>
-            <li> If a letter not in the word is guessed a draw of a man on the gallow–one part for each incorrect letter guess
-            </li>
-          </ul>
-          If you want to try a new word, simply click on the button restart the page and start
-          again!
-        </div>
+    <div class="header"></div>
+    <!--- Rules of the game section -->
+    <button data-rules-target="#rules" class="info">Instructions</button>
+    <div class="message-container"></div>
+    <!-- Hidden div that shows when rules button is clicked -->
+    <div class="rules" id="rules">
+      <div class="rules-header">
+        <div class="title">How to Play</div>
+        <button data-close-button class="close-button">&times;</button>
       </div>
-      <!-- Activates when the rules pop up is opened -->
-      <div id="overlay"></div>
-      <!-- Container for the tiles -->
-      <div class="tile-container"></div>
-      <!-- Container for the keyboard -->
-      <div class="key-container"></div>
+      <div class="rules-body">
+        You have got 6 tries to guess the word!
+        <ul>
+          <li>
+            As letters in the word are guessed, they will be written above the corresponding underline
+          </li>
+          <li> If a letter not in the word is guessed a draw of a man on the gallow–one part for each incorrect letter
+            guess
+          </li>
+        </ul>
+        If you want to try a new word, simply click on the button restart the page and start
+        again!
+      </div>
+    </div>
+    <!-- Activates when the rules pop up is opened -->
+    <div id="overlay"></div>
+    <!-- Container for the tiles -->
+    <div class="tile-container"></div>
+    <!-- Container for the keyboard -->
+    <div class="key-container"></div>
     <div class="main-container hidden">
-        <!-- Main content of the game  -->
-            <div class="wrongguesses">Wrong Guesses: <span id='errors'>0</span> of <span id='maxMistakes'></span></div>
-            <div class="text-center">
-              <img id='hangmanPic' src="assets/images/forca.png" alt="">
-              <p>Guess the word:</p>
-              <p id="hiddenword"></p>
-    <button class="btn btn-info" onClick="reset()">Play</button>
-    <button class="btn btn-info" onClick="reset()">Reset</button>
-
-            </div> 
-          </div>
-      
-        
-<!-- keyboard -->
-<div id="keyboard"> 
-</div>
-</main> 
-    <!-- Footer  -->
-    <footer>
-      <ul class="social-networks">
-        <li>
-            <a href="https://www.facebook.com/helen.beatriz.10/" target="_blank" rel="noopener"
-                aria-label="Visit my Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
-        </li>
-        <li>
-          <a href="https://github.com/helenbeatriz/" target="_blank" rel="noopener"
-              aria-label="Visit my Github page (opens in a new tab)"><i class="fab fa-github-square"></i></a>
+      <!-- Main content of the game  -->
+      <div class="wrongguesses">Wrong Guesses: <span id='errors'>0</span> of <span id='maxMistakes'></span></div>
+      <div class="text-center">
+        <img id='hangmanPic' src="assets/images/forca.png" alt="">
+        <p>Guess the word:</p>
+        <p id="hiddenword"></p>
+        <button class="btn btn-info" onClick="reset()">Play</button>
+        <button class="btn btn-info" onClick="reset()">Reset</button>
+      </div>
+    </div>
+    <!-- keyboard -->
+    <div id="keyboard">
+    </div>
+  </main>
+  <!-- Footer  -->
+  <footer>
+    <ul class="social-networks">
+      <li>
+        <a href="https://www.facebook.com/helen.beatriz.10/" target="_blank" rel="noopener"
+          aria-label="Visit my Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
       </li>
       <li>
-          <a href="https://www.linkedin.com/in/helen-cantu-1a0097166/" target="_blank" rel="noopener"
-              aria-label="Visit my Linkedin page (opens in a new tab)"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/helenbeatriz/" target="_blank" rel="noopener"
+          aria-label="Visit my Github page (opens in a new tab)"><i class="fab fa-github-square"></i></a>
       </li>
-  </ul>
+      <li>
+        <a href="https://www.linkedin.com/in/helen-cantu-1a0097166/" target="_blank" rel="noopener"
+          aria-label="Visit my Linkedin page (opens in a new tab)"><i class="fab fa-linkedin"></i></a>
+      </li>
+    </ul>
   </footer>
-    <script src="assets/js/javascript.js" ></script> 
+  <script src="assets/js/javascript.js"></script>
 </body>
+
 </html>
