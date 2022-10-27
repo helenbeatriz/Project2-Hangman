@@ -45,7 +45,16 @@ This is how I was planning my website to look like.
 </ul>
  
  ![Game](/assets/images/game.png)
+
+ ![Error](/assets/images/404.png)
+
+## 404 Page 
+A 404 page will be displayed if a user navigates to a broken link.
+The 404 page will allow the user to easily go back to the main page cliking on "Return to the main page". 
+
 # How to Play 
+
+![Instructions](/assets/images/instructions.png)
 
 * When the user opens the application its expected that he/she opens the instructions section and then play the game click ok 'play', the keyboard is going to show up once that is done.
 * Once keyboard is shown user will try to guess the word that is hidden on the game and when the letter does not exists in the word the man's body is going to start showing up on the hanging rope.
