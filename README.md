@@ -44,6 +44,7 @@ This is how I was planning my website to look like.
 <li>Rules - to guide the user on how to play the game</li>
 </ul>
  
+ ![Game](/assets/images/game.png)
 # How to Play 
 
 * When the user opens the application its expected that he/she opens the instructions section and then play the game click ok 'play', the keyboard is going to show up once that is done.
@@ -87,10 +88,11 @@ I tested the website on different sreen sizes and devices to ensure responsivene
   - Also got good scores on lightroom. 
   ![CSS-validator](assets/images/cssvalidator.png)
 
-  -  No potention errors were found on JSHint. ![JSHint](assets/images/jshint.png)
+- JSHint 
+  -  No potention errors were found on JSHint. 
   - "Reset()" function error is shown as a non called function although it's being called on html.index file.
   - Function "handleGuess()" is being called on te function generateButtons (keyboard).
-  
+  ![JSHint](assets/images/jshint.png)
 ## Deployment
 
 This website was created using Gitpod.
@@ -102,7 +104,7 @@ This website was created using Gitpod.
   - Click 'Save'
   - A live link appears on a green tag when published successfully. 
 
-The live link can be found [here] - (https://helenbeatriz.github.io/Project2-Hangman/index.html)
+The live link can be found ![here] - (https://helenbeatriz.github.io/Project2-Hangman/index.html)
 
 
 ## Credits 
